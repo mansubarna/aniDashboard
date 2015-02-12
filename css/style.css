@@ -1,0 +1,348 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 6, ../scss/base/_reset.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 17, ../scss/base/_reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 20, ../scss/base/_reset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 23, ../scss/base/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../scss/base/_reset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 30, ../scss/base/_reset.scss */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 35, ../scss/base/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 12, ../scss/style.scss */
+.header {
+  height: 48px;
+  background: #ccc;
+  display: block;
+}
+
+/* line 17, ../scss/style.scss */
+.gridWrap {
+  position: relative;
+  z-index: 9999;
+}
+
+/* line 21, ../scss/style.scss */
+.main {
+  position: relative;
+  overflow: hidden;
+  margin: 100px auto;
+  width: 360px;
+  height: 530px;
+  border: 1px solid #ccc;
+}
+
+@-webkit-keyframes slide-up {
+  /* line 31, ../scss/style.scss */
+  0% {
+    transform: translateY(560px);
+    opacity: 0;
+  }
+
+  /* line 35, ../scss/style.scss */
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes slide-up {
+  /* line 31, ../scss/style.scss */
+  0% {
+    transform: translateY(560px);
+    opacity: 0;
+  }
+
+  /* line 35, ../scss/style.scss */
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes slide-up {
+  /* line 31, ../scss/style.scss */
+  0% {
+    transform: translateY(560px);
+    opacity: 0;
+  }
+
+  /* line 35, ../scss/style.scss */
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@-o-keyframes slide-up {
+  /* line 31, ../scss/style.scss */
+  0% {
+    transform: translateY(560px);
+    opacity: 0;
+  }
+
+  /* line 35, ../scss/style.scss */
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  /* line 31, ../scss/style.scss */
+  0% {
+    transform: translateY(560px);
+    opacity: 0;
+  }
+
+  /* line 35, ../scss/style.scss */
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes KeyPressExand {
+  /* line 41, ../scss/style.scss */
+  100% {
+    transform: scale(8);
+  }
+}
+
+@-moz-keyframes KeyPressExand {
+  /* line 41, ../scss/style.scss */
+  100% {
+    transform: scale(8);
+  }
+}
+
+@-ms-keyframes KeyPressExand {
+  /* line 41, ../scss/style.scss */
+  100% {
+    transform: scale(8);
+  }
+}
+
+@-o-keyframes KeyPressExand {
+  /* line 41, ../scss/style.scss */
+  100% {
+    transform: scale(8);
+  }
+}
+
+@keyframes KeyPressExand {
+  /* line 41, ../scss/style.scss */
+  100% {
+    transform: scale(8);
+  }
+}
+
+/* line 45, ../scss/style.scss */
+.grid {
+  width: 50%;
+  float: left;
+  height: 160px;
+  position: absolute;
+}
+
+/* line 51, ../scss/style.scss */
+.grid1 {
+  background: #111111;
+  -webkit-animation: slide-up 0.5s ease-out 0.1s forwards normal;
+  -moz-animation: slide-up 0.5s ease-out 0.1s forwards normal;
+  -ms-animation: slide-up 0.5s ease-out 0.1s forwards normal;
+  -o-animation: slide-up 0.5s ease-out 0.1s forwards normal;
+  animation: slide-up 0.5s ease-out 0.1s forwards normal;
+}
+
+/* line 55, ../scss/style.scss */
+.grid2 {
+  background: #222222;
+  -webkit-animation: slide-up 0.5s ease-out 0.2s forwards normal;
+  -moz-animation: slide-up 0.5s ease-out 0.2s forwards normal;
+  -ms-animation: slide-up 0.5s ease-out 0.2s forwards normal;
+  -o-animation: slide-up 0.5s ease-out 0.2s forwards normal;
+  animation: slide-up 0.5s ease-out 0.2s forwards normal;
+  left: 50%;
+}
+
+/* line 60, ../scss/style.scss */
+.grid3 {
+  background: #333333;
+  -webkit-animation: slide-up 0.5s 0.3s ease-out forwards normal;
+  -moz-animation: slide-up 0.5s 0.3s ease-out forwards normal;
+  -ms-animation: slide-up 0.5s 0.3s ease-out forwards normal;
+  -o-animation: slide-up 0.5s 0.3s ease-out forwards normal;
+  animation: slide-up 0.5s 0.3s ease-out forwards normal;
+  top: 160px;
+}
+
+/* line 65, ../scss/style.scss */
+.grid4 {
+  background: #444444;
+  -webkit-animation: slide-up 0.5s 0.4s ease-out forwards normal;
+  -moz-animation: slide-up 0.5s 0.4s ease-out forwards normal;
+  -ms-animation: slide-up 0.5s 0.4s ease-out forwards normal;
+  -o-animation: slide-up 0.5s 0.4s ease-out forwards normal;
+  animation: slide-up 0.5s 0.4s ease-out forwards normal;
+  top: 160px;
+  left: 179px;
+}
+
+/* line 71, ../scss/style.scss */
+.grid5 {
+  background: #555555;
+  -webkit-animation: slide-up 0.5s 0.5s ease-out forwards normal;
+  -moz-animation: slide-up 0.5s 0.5s ease-out forwards normal;
+  -ms-animation: slide-up 0.5s 0.5s ease-out forwards normal;
+  -o-animation: slide-up 0.5s 0.5s ease-out forwards normal;
+  animation: slide-up 0.5s 0.5s ease-out forwards normal;
+  top: 320px;
+}
+
+/* line 76, ../scss/style.scss */
+.grid6 {
+  background: #666666;
+  -webkit-animation: slide-up 0.5s 0.6s ease-out forwards normal;
+  -moz-animation: slide-up 0.5s 0.6s ease-out forwards normal;
+  -ms-animation: slide-up 0.5s 0.6s ease-out forwards normal;
+  -o-animation: slide-up 0.5s 0.6s ease-out forwards normal;
+  animation: slide-up 0.5s 0.6s ease-out forwards normal;
+  top: 320px;
+  left: 179px;
+}
+
+/* line 82, ../scss/style.scss */
+.pressExpand {
+  -webkit-animation: KeyPressExand 0.5s ease-out 0.1s forwards normal;
+  -moz-animation: KeyPressExand 0.5s ease-out 0.1s forwards normal;
+  -ms-animation: KeyPressExand 0.5s ease-out 0.1s forwards normal;
+  -o-animation: KeyPressExand 0.5s ease-out 0.1s forwards normal;
+  animation: KeyPressExand 0.5s ease-out 0.1s forwards normal;
+}
+
+/* line 85, ../scss/style.scss */
+.upLift {
+  z-index: 999;
+}
+
+/* line 88, ../scss/style.scss */
+.topMost {
+  position: absolute;
+  z-index: 9999;
+  top: 0px;
+  width: 100%;
+  height: 48px;
+  display: block;
+}
+
+/* line 96, ../scss/style.scss */
+.visible {
+  display: block;
+}
+
+@-webkit-keyframes showdelay {
+  /* line 103, ../scss/style.scss */
+  0% {
+    display: none;
+  }
+
+  /* line 106, ../scss/style.scss */
+  100% {
+    display: block;
+  }
+}
+
+@-moz-keyframes showdelay {
+  /* line 103, ../scss/style.scss */
+  0% {
+    display: none;
+  }
+
+  /* line 106, ../scss/style.scss */
+  100% {
+    display: block;
+  }
+}
+
+@-ms-keyframes showdelay {
+  /* line 103, ../scss/style.scss */
+  0% {
+    display: none;
+  }
+
+  /* line 106, ../scss/style.scss */
+  100% {
+    display: block;
+  }
+}
+
+@-o-keyframes showdelay {
+  /* line 103, ../scss/style.scss */
+  0% {
+    display: none;
+  }
+
+  /* line 106, ../scss/style.scss */
+  100% {
+    display: block;
+  }
+}
+
+@keyframes showdelay {
+  /* line 103, ../scss/style.scss */
+  0% {
+    display: none;
+  }
+
+  /* line 106, ../scss/style.scss */
+  100% {
+    display: block;
+  }
+}
+
+/* line 111, ../scss/style.scss */
+.showDelay {
+  -webkit-animation: showdelay 0.5s ease-out 0.6s forwards normal;
+  -moz-animation: showdelay 0.5s ease-out 0.6s forwards normal;
+  -ms-animation: showdelay 0.5s ease-out 0.6s forwards normal;
+  -o-animation: showdelay 0.5s ease-out 0.6s forwards normal;
+  animation: showdelay 0.5s ease-out 0.6s forwards normal;
+}
